@@ -21,10 +21,12 @@ public class CheckISBN {
             + d6 * 6 + d7 * 7 + d8 * 8 + d9 * 9) % 11;
     
     if(checksum == 10){
-      System.out.println("The ISBN-10 number is " + isbn + "X");
+      System.out.println("The ISBN-10 number is " + d1 + isbn 
+              + "X");
     } // if
     else{
-      System.out.println("The ISBN-10 number is " + isbn + checksum);
+      System.out.println("The ISBN-10 number is " + d1 + isbn 
+              + checksum);
     } // else
   } // main   
 } //CheckISBN
